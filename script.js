@@ -16,8 +16,7 @@ if (chooseFormula == 1) {
 	document.write("<p>-------------------------------------</p>");
 	document.write(`<p>Cylinder volume: ${s}*${h} = ${V} cm<sup><small>3</small></sup></p>`);
 	document.write("<p>-------------------------------------</p>");
-}
-else {
+} else {
 	document.write("<h4>Calculation of cylinder volume by π, r and h</h4>");
 	document.write(`<p style="color:red;">*****************************************</p>`);
 	r = +prompt("Enter radius: r", "");
