@@ -1,4 +1,10 @@
-"user strict";
+"use strict";
+
+let V;
+let s;
+let h;
+let r;
+let chooseFormula;
 
 function calcSh() {
 	if (chooseFormula == 1) {
