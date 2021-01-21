@@ -1,5 +1,13 @@
 "user strict";
 
+function calcSh() {
+	if (chooseFormula == 1) {
+		V = s * h;
+	} else {
+		V = Math.PI * r ** 2 * h;
+	}
+}
+
 chooseFormula = prompt("Choose a formula: \n 1: V = S * h \n 2: V = π * r * r * h", '');
 
 if (chooseFormula == 1) {
@@ -16,10 +24,10 @@ if (chooseFormula == 1) {
 	document.write(`<p>Height: ${h} cm</p>`);
 	document.write("<p>-------------------------------------</p>");
 	document.write("<p>Formula: V = S*h</p>");
-
-	V = s * h;
-
 	document.write("<p>-------------------------------------</p>");
+
+	calcSh();
+
 	document.write(`<p>Cylinder volume: ${s}*${h} = ${V} cm<sup><small>3</small></sup></p>`);
 	document.write("<p>-------------------------------------</p>");
 } else {
@@ -32,14 +40,14 @@ if (chooseFormula == 1) {
 
 	h = +prompt("Enter height h", "");
 
-	document.write("<p>-------------------------------------</p>"); 
+	document.write("<p>-------------------------------------</p>");
 	document.write(`<p>Height: ${h} cm</p>`);
 	document.write("<p>-------------------------------------</p>");
 	document.write(`<p>Formula: V = &#960;*r<sup><small>2</small></sup>*h</p>`);
-
-	V = Math.PI * r ** 2 * h;
-
 	document.write("<p>-------------------------------------</p>");
+
+	calcSh();
+
 	document.write(`<p>Cylinder volume: 3,14159*${r ** 2}*${h} = ${V} cm<sup><small>3</small></sup></p>`);
 	document.write("<p>-------------------------------------</p>");
 };
