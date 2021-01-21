@@ -54,7 +54,7 @@ if (chooseFormula == 1) {
 
 	calcSh();
 
-	document.write(`<p>Cylinder volume: 3,14159*${r ** 2}*${h} = ${V} cm<sup><small>3</small></sup></p>`);
+	document.write(`<p>Cylinder volume: 3,14159*${r ** 2}*${h} = ${V.toFixed(5)} cm<sup><small>3</small></sup></p>`);
 	document.write("<p>-------------------------------------</p>");
 };
 
