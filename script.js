@@ -34,7 +34,7 @@ if (chooseFormula == 1) {
 	s = +prompt("Enter square: S", "");
 
 	while (isNaN(s) || s <= 0) {
-		s = +prompt("Attn: S(value) must be a number more than zero:", "");
+		s = +prompt("Attn: Value must be a number more than zero:", "");
 	}
 
 	document.write(`<p>Square: ${s} cm<sup><small>2</small></sup></p>`);
@@ -60,7 +60,7 @@ if (chooseFormula == 1) {
 	r = +prompt("Enter radius: r", "");
 
 	while (isNaN(r) || r <= 0) {
-		r = +prompt("Attn: r(value) must be a number more than zero:", "");
+		r = +prompt("Attn: Value must be a number more than zero:", "");
 	}
 
 	document.write(`<p>Radius: ${r} cm</p>`);
