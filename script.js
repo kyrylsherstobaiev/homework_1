@@ -5,7 +5,7 @@ let s;
 let h;
 let r;
 let chooseFormula;
-let line = "-------------------------------------";
+let line = "----------------------------------------------------------";
 
 function calcSh() {
 	if (chooseFormula == 1) {
@@ -15,10 +15,16 @@ function calcSh() {
 	}
 }
 
+function checkNan() {
+	while (isNaN(h) || h <= 0) {
+		h = +prompt("Attn: h(value) must be a number more than zero:", "");
+	}
+}
+
 chooseFormula = +prompt("Choose a formula: \n 1: V = S * h \n 2: V = π * r * r * h", '');
 
 while (chooseFormula != 1 && chooseFormula != 2) {
-	chooseFormula = +prompt("Attn: Enter Number-1 or Number-23: \n 1: V = S * h \n 2: V = π * r * r * h", '');
+	chooseFormula = +prompt("Attn: Enter Number-1 or Number-2: \n 1: V = S * h \n 2: V = π * r * r * h", '');
 }
 
 if (chooseFormula == 1) {
@@ -27,9 +33,15 @@ if (chooseFormula == 1) {
 
 	s = +prompt("Enter square: S", "");
 
+	while (isNaN(s) || s <= 0) {
+		s = +prompt("Attn: S(value) must be a number more than zero:", "");
+	}
+
 	document.write(`<p>Square: ${s} cm<sup><small>2</small></sup></p>`);
 
 	h = +prompt("Enter height: h", "");
+
+	checkNan();
 
 	document.write(`<p>${line}</p>`);
 	document.write(`<p>Height: ${h} cm</p>`);
@@ -47,9 +59,15 @@ if (chooseFormula == 1) {
 
 	r = +prompt("Enter radius: r", "");
 
+	while (isNaN(r) || r <= 0) {
+		r = +prompt("Attn: r(value) must be a number more than zero:", "");
+	}
+
 	document.write(`<p>Radius: ${r} cm</p>`);
 
 	h = +prompt("Enter height h", "");
+
+	checkNan();
 
 	document.write(`<p>${line}</p>`);
 	document.write(`<p>Height: ${h} cm</p>`);
