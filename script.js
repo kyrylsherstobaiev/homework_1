@@ -17,7 +17,7 @@ function calcSh() {
 
 function checkNan() {
 	while (isNaN(h) || h <= 0) {
-		h = +prompt("Attn: h(value) must be a number more than zero:", "");
+		h = +prompt("Attn: Value must be a number more than zero:", "");
 	}
 }
 
