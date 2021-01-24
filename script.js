@@ -11,7 +11,7 @@ function calcSh() {
 	if (chooseFormula == 1) {
 		V = s * h;
 	} else {
-		V = Math.PI * Math.pow(r, 2) * h;2
+		V = Math.PI * Math.pow(r, 2) * h;
 	}
 }
 
