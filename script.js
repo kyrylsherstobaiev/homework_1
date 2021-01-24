@@ -21,6 +21,12 @@ function checkNan() {
 	}
 }
 
+//function checkNan(n) {
+//	while (isNaN(n) || n <= 0) {
+//		n = +prompt("Attn: Value must be a number more than zero:", "");
+//	}
+//}
+
 chooseFormula = +prompt("Choose a formula: \n 1: V = S * h \n 2: V = π * r * r * h", '');
 
 while (chooseFormula != 1 && chooseFormula != 2) {
@@ -40,6 +46,8 @@ if (chooseFormula == 1) {
 	document.write(`<p>Square: ${s} cm<sup><small>2</small></sup></p>`);
 
 	h = +prompt("Enter height: h", "");
+
+	//checkNan(h);
 
 	checkNan();
 
